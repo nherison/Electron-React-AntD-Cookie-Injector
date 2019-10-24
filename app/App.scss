@@ -1,0 +1,38 @@
+@import '../configs/theme.scss';
+@import '../configs/config.scss';
+.sider {
+  overflow: hidden;
+  height: 100vh;
+  left: 0;
+  z-index: 2;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+}
+
+.trigger {
+  font-size: 28px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.header {
+  padding: 0;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 20px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 255, 0.5);
+  display: flex;
+  h1 {
+    color: $primary-color;
+  }
+}
+.logo {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px;
+}
