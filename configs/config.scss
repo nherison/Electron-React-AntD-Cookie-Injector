@@ -1,0 +1,25 @@
+%shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+$red: hsl(0, 72%, 59%);
+$red-highlight: hsl(0, 72%, 70%);
+$green: hsl(120, 63%, 69%);
+$green-highlight: hsl(120, 63%, 80%);
+
+@mixin button($color) {
+  border-color: $color;
+  background-color: $color;
+  color: white;
+  &:focus {
+    border-color: $color;
+    background-color: $color;
+    color: white;
+  }
+  &:hover,
+  &:active {
+    border-color: lighten($color, 10%);
+    background-color: lighten($color, 10%);
+    color: white;
+  }
+}
