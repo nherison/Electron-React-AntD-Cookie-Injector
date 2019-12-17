@@ -1,0 +1,9 @@
+@import '../../../configs/theme.scss';
+@import '../../../configs/config.scss';
+span {
+  font-size: 1rem;
+  font-weight: 100;
+}
+.ant-table-thead {
+  font-weight: 900;
+}
